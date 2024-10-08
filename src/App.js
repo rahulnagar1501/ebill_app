@@ -1,19 +1,14 @@
-import Navbar from './Components/Navbar';
-import './App.css';
-import Blocks from './components/blocks';
+import Navbar from "./Components/Navbar";
+import "./App.css";
+import Blocks from "./Components/Blocks";
 
 function App() {
   return (
-<<<<<<< HEAD
-    <Navbar />
-=======
-    <div className=''>
-     <Blocks />
+    <div>
+      <Navbar />
+      <Blocks />
     </div>
->>>>>>> 850f73b (add block component and design)
   );
 }
 
-export default App
-
-
+export default App;

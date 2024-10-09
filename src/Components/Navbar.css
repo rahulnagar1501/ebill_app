@@ -2,16 +2,23 @@ svg {
     width: 16px !important;
 }
 
-
-
 .options-menu div {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    @apply text-gray-500
+    @apply text-gray-500;
+    break-inside: avoid;
+    margin-bottom: 30px;
 }
 
 .options-menu div h2 {
     @apply text-black;
-    @apply text-sm
+    @apply text-sm;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.options-menu div p {
+    @apply text-gray-500;
+    font-size: 15px;
 }

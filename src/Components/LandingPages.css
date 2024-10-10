@@ -1,0 +1,9 @@
+img {
+    height: 230px;
+    transition: .5s ease all;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}

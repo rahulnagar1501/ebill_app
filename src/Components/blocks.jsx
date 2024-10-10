@@ -57,33 +57,19 @@ const features = [
 ];
 function Blocks() {
   return (
-    <div className="">
-      <div className="bg-black py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-              More Block theme Features
-            </p>
-
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-7xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16 lg:max-w-none">
-              {features.map((feature) => (
-                <div key={feature.name} className="relative pl-16 ">
-                  <dt className="text-base font-semibold  text-white">
-                    <div className="absolute left-0 top-0  flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                      {/* <feature.icon aria-hidden="true" className="h-6 w-6 text-white" /> */}
-                    </div>
-                    {feature.name}
-                  </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-400">{feature.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
+    <div className="py-8">
+      <h2 className="text-center my-7 font-bold text-3xl">More Block theme Features</h2>
+      <div className="grid grid-cols-auto gap-8 px-4 md:px-16 py-8 max-w-[1320px] mx-auto">
+        {
+          features.map((feature) => (
+            <div className="flex flex-col gap-2">
+              <div className="bg-[#8B3DFF] p-4 mb-4 w-4 rounded-lg"></div>
+              <h2 className="text-lg font-semibold">{feature.name}</h2>
+              <p className="text-gray-500 font-semibold">{feature.description}</p>
+            </div>
+          ))
+        }
       </div>
-
     </div>
   );
 }
